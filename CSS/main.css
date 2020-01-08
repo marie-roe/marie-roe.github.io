@@ -40,3 +40,6 @@ footer a {
 footer a:hover {
   color: goldenrod;
 }
+#lastmodified {
+  color: goldenrod;
+}
