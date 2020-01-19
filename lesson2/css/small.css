@@ -1,12 +1,68 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap');
 body {
-font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
 font-size: 18px;
 line-height: 1.5;
+text-align:center;
+}
+.grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  margin: auto;
+  padding: .75em
+}
+h1{
+  font-size:24px;
+  margin: 0;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+h3 {
+  background-color:#ac3b61;
+  color: white;
+  margin-top:0px;
+  padding: 5px;
+  border-radius: 10px 10px 10px 10px;
 }
 header {
-  background-color: palevioletred;
+  padding: .25em;
+}
+header,body,footer {
+  margin: 0 auto;
+  
+}
+header, footer {
+  background-color: #123c69;
+  color:white;
+  border-radius: 10px 10px;
+}
+
+section {
+  background-color: #eee2dc;
+  border-radius: 10px 10px 10px 10px;
+  padding: 15px;
+}
+section img {
+  max-width: 95%;
+  padding: .5em
+}
+section a {
+  color:#123c69;
+}
+section a:hover {
+  color:#bab2b5;
+}
+section p { 
+  text-align: left;
+}
+
+#lastmodified {
+  color: goldenrod;
+  font-size:10px;
+}
+footer {
+padding: .5px;
+margin-top: 2rem;
 }
