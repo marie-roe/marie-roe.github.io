@@ -1,11 +1,11 @@
 @media only screen and (min-width: 45em) {
 	
- {
+ 
 	.navigation {
 		display: flex;
 	}
 	.navigation li {
-		display: block; /* needed because of state in small view */
+		display: block;
 		flex: 1 1 100%;
 	}
 	.navigation li a {
