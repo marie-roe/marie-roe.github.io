@@ -1,6 +1,6 @@
-const menuTab = document.querySelector(".menuTab");
-menuButton.addEventListener("click", toggleMenu, false);
+const hambutton = document.querySelector(".menuTab");
+hambutton.addEventListener("click", toggleMenu, false);
 
 function toggleMenu() {
-    document.querySelector("*.navigation").classList.toggle("respond");
+    document.querySelector(".navlist").classList.toggle("responsive");
 }

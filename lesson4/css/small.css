@@ -5,23 +5,58 @@ body {
   margin: 0;
   padding: 0;
 }
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: #687864;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color:white;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+}
+.navigation a:hover {
+	color: #000;
+	background-color: #fff;
+	font-weight: 700;
+}
+
+.responsive li {
+	display: block;
+}
+
+
+
 .container {
   padding: 8px;
   padding-bottom: 0;
   margin: 0 auto;
 }
+/*
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
+}*/
 h1 {
   font-size: 18px;
   margin-bottom: 0;
 }
 .motto {
-  font-size: x-large;
+  font-size: medium;
   padding-bottom: 10px;
 }
 header,
@@ -32,8 +67,9 @@ footer {
   margin: auto;
 }
 .logoimage {
-  width: 65px;
+  max-width: 30px;
 }
+/*
 nav {
   background-color: #687864;
   padding: 10px;
@@ -42,19 +78,33 @@ nav {
 .navigation {
   list-style: none;
   padding: 0;
+
 }
 
 nav ul li {
   display: inline-block;
 }
-header li a {
+nav li a {
   text-decoration: none;
   padding: 10px;
   color: white;
+  display:block;
+  text-align: center;
 }
 li a:hover {
   color: #8fc1e3;
 }
+li a.active {
+  background-color: blac
+  
+}
+nav button {
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  font-size: 1rem;
+  margin: .5rem;
+}*/
 
 h1,
 h2,
@@ -87,6 +137,7 @@ main h2 {
 footer {
   padding: 0.2em;
   line-height: 1.5;
+  margin: 2em auto;
 }
 footer a {
   color: white;
