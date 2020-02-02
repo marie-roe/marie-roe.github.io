@@ -1,0 +1,33 @@
+@media only screen and (min-width: 60em) {
+  .logoimage {
+    max-width:100%;
+  }
+	
+.navigation {
+  display: flex;
+}
+nav a {
+  border:none;
+  text-align: center;
+}
+nav li {
+  display: block;
+  flex: 1 1 100%;
+}
+.navigation li:first-child {
+  display:none;
+}
+h1 {
+  font-size: 45px;
+}
+.motto {
+  font-size: x-large;
+}
+main {
+  width: 64em;
+  max-width: 900px;
+}
+footer {
+		max-width: 52em;
+  }
+}

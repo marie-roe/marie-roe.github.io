@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Vidaloka&display=swap');
+
+body {
+  background-color: #8fc1e3;
+  margin:0;
+  padding:0;
+}
+header {
+  padding: 8px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ h1 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.motto {
+  font-size: x-large;
+  padding-bottom: 10px;
+}
+header,
+footer {
+  text-align: center;
+  color: white;
+  background-color: #31708e;
+  margin: auto;
+}
+.logoimage {
+  width: 65px;
+
+}
+nav {
+  background-color: #687864;
+  padding: 10px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+.navigation {
+  
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+header li a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+li a:hover {
+  color: #8fc1e3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Vidaloka", serif;
+  letter-spacing: 2px;
+}
+main {
+  color: black;
+  margin: 1.5em auto;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  padding: 1em;
+}
+main h2 {
+  text-align: center;
+}
+
+.prestonbox {
+  background-color: white;
+  color: black;
+  border-radius: 0 0 0 0;
+  padding: 5px;
+  margin: 8px;
+}
+
+footer {
+  padding: .2em;
+  line-height: 1.5;
+  
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: goldenrod;
+}
+#lastmodified {
+  color: goldenrod;
+}

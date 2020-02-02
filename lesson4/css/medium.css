@@ -1,0 +1,11 @@
+@media only screen and (min-width: 45em) {
+	footer {
+		width: 42em;
+	}
+.logoimage {
+  max-width: 75%
+}
+header h1 {
+  font-size: 30px;
+}
+}
