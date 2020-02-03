@@ -7,10 +7,12 @@
 			width: 42em;
 		}
 	
-		header img {
-			width: 75%;
+		.motto {
+			font-size: large;
 		}
-	
+		.logoimage {
+			width: 45px;
+		}
 		main {
 			width: 40em;
 		}

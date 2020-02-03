@@ -1,10 +1,10 @@
 @media only screen and (min-width:64em) {
   body{
-    
     max-width:960px;
   }
   h1 {
-    font-size:40px;
+    font-size:50px;
+    margin-bottom: 3px;
   }
   
   .motto {
@@ -19,11 +19,9 @@
 	}
 	
 	header {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }  
+    margin-bottom: 0;
+  }
 
   footer {
 		width: 52em;

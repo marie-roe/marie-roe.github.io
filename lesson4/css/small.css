@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding:0;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   background-color: white;
@@ -13,12 +13,18 @@ header {
   align-items: center;
   justify-content: center;
 }
+header, nav {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 footer {
   text-align: center;
   padding: 0.2em;
 }
 header,
 footer {
+  text-align: center;
   background-color: #31708e;
   color: white;
   margin: auto;
@@ -32,16 +38,20 @@ h6 {
   font-family: "Vidaloka", serif;
   letter-spacing: 2px;
 }
+nav a.active {
+  background-color: #31708e;
+  color:white;
+}
 nav {
   margin: 0 auto;
-  max-width: ;
+  max-width:960px;
   background-color: #687864;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
+  text-align:center;
 }
 .navigation {
   list-style: none;
   padding: 0;
-
 }
 .navigation li:first-child {
   display: block;
@@ -52,19 +62,22 @@ nav {
 .navigation a {
   display: block;
   color:white;
-  padding: 0.75rem;
+  padding: .75em;
   text-align: left;
   text-decoration: none;
 }
 .navigation a:hover {
-  color: #000;
+  color: #31708e;
   background-color: #fff;
   font-weight: 700;
 }
+
 .responsive li {
   display: block;
 }
-
+main h2 {
+  text-align:center;
+}
 main {
   color: black;
   margin: 1.5em auto;
@@ -75,7 +88,7 @@ main {
 .prestonbox {
   background-color: #8fc1e3;
   color: black;
-  border-radius: 10 10 10 10;
+  border-radius: 10px 10px 10px 10px;
   border: 1px;
   padding: 5px;
   margin: 15px;
