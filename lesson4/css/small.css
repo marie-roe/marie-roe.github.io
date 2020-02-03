@@ -1,111 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Vidaloka&display=swap");
 
 body {
-  background-color: #8fc1e3;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  background-color: white;
 }
-nav {
-	margin: 0 auto;
-	max-width: 760px;
-	background-color: #687864;
-}
-.navigation {
-	list-style: none;
-	padding: 0;
-}
-.navigation li:first-child {
-	display: block;
-}
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	color:white;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-}
-.navigation a:hover {
-	color: #000;
-	background-color: #fff;
-	font-weight: 700;
-}
-
-.responsive li {
-	display: block;
-}
-
-
-
-.container {
-  padding: 8px;
-  padding-bottom: 0;
-  margin: 0 auto;
-}
-/*
 header {
+  padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}*/
-h1 {
-  font-size: 18px;
-  margin-bottom: 0;
+  justify-content: center;
 }
-.motto {
-  font-size: medium;
-  padding-bottom: 10px;
+footer {
+  text-align: center;
+  padding: 0.2em;
 }
 header,
 footer {
-  text-align: center;
-  color: white;
   background-color: #31708e;
+  color: white;
   margin: auto;
 }
-.logoimage {
-  max-width: 30px;
-}
-/*
-nav {
-  background-color: #687864;
-  padding: 10px;
-  padding-bottom: 15px;
-}
-.navigation {
-  list-style: none;
-  padding: 0;
-
-}
-
-nav ul li {
-  display: inline-block;
-}
-nav li a {
-  text-decoration: none;
-  padding: 10px;
-  color: white;
-  display:block;
-  text-align: center;
-}
-li a:hover {
-  color: #8fc1e3;
-}
-li a.active {
-  background-color: blac
-  
-}
-nav button {
-  background-color: transparent;
-  border: none;
-  color: #000000;
-  font-size: 1rem;
-  margin: .5rem;
-}*/
-
 h1,
 h2,
 h3,
@@ -115,6 +32,39 @@ h6 {
   font-family: "Vidaloka", serif;
   letter-spacing: 2px;
 }
+nav {
+  margin: 0 auto;
+  max-width: ;
+  background-color: #687864;
+  padding-bottom: 15px;
+}
+.navigation {
+  list-style: none;
+  padding: 0;
+
+}
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  color:white;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+}
+.navigation a:hover {
+  color: #000;
+  background-color: #fff;
+  font-weight: 700;
+}
+.responsive li {
+  display: block;
+}
+
 main {
   color: black;
   margin: 1.5em auto;
@@ -122,18 +72,14 @@ main {
   font-family: "Roboto", sans-serif;
   padding: 1em;
 }
-main h2 {
-  text-align: center;
-}
-
 .prestonbox {
-  background-color: white;
+  background-color: #8fc1e3;
   color: black;
-  border-radius: 0 0 0 0;
+  border-radius: 10 10 10 10;
+  border: 1px;
   padding: 5px;
-  margin: 8px;
+  margin: 15px;
 }
-
 footer {
   padding: 0.2em;
   line-height: 1.5;
