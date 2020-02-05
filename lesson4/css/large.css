@@ -33,6 +33,7 @@
   }
   .navigation {
     display: flex;
+    white-space: nowrap;
   }
   .navigation li {
     display: block; 
