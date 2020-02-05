@@ -39,8 +39,8 @@ h6 {
   letter-spacing: 2px;
 }
 nav a.active {
-  background-color: #31708e;
-  color:white;
+  border-bottom: 3px solid white;
+  
 }
 nav {
   margin: 0 auto;
