@@ -44,7 +44,7 @@ nav a.active {
 }
 nav {
   margin: 0 auto;
-  max-width:960px;
+  
   background-color: #687864;
   text-align:center;
 }
@@ -94,7 +94,7 @@ main {
   color: black;
   border-radius: 10px 10px 10px 10px;
   border: 1px;
-  padding: 5px;
+  padding: 8px;
   margin: 15px;
 }
 footer {
