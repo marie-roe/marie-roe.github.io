@@ -15,6 +15,7 @@
   nav a.active {
     border-bottom: 3px solid white;
     background-color: transparent;
+    color:white;
   }
   nav a:hover {
     border-bottom: 3px solid white;
@@ -36,11 +37,6 @@
     position: absolute;
     top: 25px;
     left: 25px;
-    background: radial-gradient(white, rgb(107, 190, 218));
-    border: 1px solid lightblue;
-    padding: 1rem;
-    box-shadow: 5px 5px 30px #777;
-    opacity: 0.9;
   }
   .fiveday {
     display: flex;
