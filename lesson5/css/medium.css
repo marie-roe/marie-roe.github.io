@@ -49,11 +49,15 @@
     padding-bottom: .5px;
   }
   .prestonmap {
-    display: flex;
     width:300px;
     box-shadow: 5px 5px 20px #777;
   }
-  .contact {
-    float: right;
+  
+  .social img {
+    width:30px;
+  }
+  footer {
+    width:45em;
+    margin: 0 auto;
   }
 }

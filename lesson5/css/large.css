@@ -20,7 +20,14 @@
   .prestonmap {
     width: 425px;
   }
+ 
+  .social img {
+    width:30px;
+  }
+  
   footer {
+    width:52em;
+    margin: 0 auto;
     padding: 1rem;
   }
 }
