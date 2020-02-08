@@ -1,4 +1,7 @@
 @media screen and (min-width: 64em) {
+  .navlist li:first-child {
+    display: none;
+  }
   .herocontainer {
     margin: 10px auto;
     position: relative;
@@ -9,6 +12,10 @@
   .herocontainer img {
     width: 100%;
     height: 450px;
+  }
+  .weathersummary {
+    top: 40px;
+    left: 40px;
   }
   .prestonmap {
     width: 425px;

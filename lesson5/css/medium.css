@@ -1,10 +1,16 @@
 @media screen and (min-width: 40em) {
-  nav li:first-child {
+ .navlist {
+   display: flex;
+ }
+ .navlist li {
+   display:block;
+   flex: 1 1 100%;
+ }
+ .navlist li a {
+   text-align: center;
+ }
+  .navlist li:first-child {
     display: none;
-  }
-
-  nav li {
-    flex: 1 1 100%;
   }
   nav a.active {
     border-bottom: 3px solid white;
@@ -17,6 +23,7 @@
     margin: 10px auto;
     position: relative;
     width: 640px;
+    padding-bottom: 15px;
   }
   .herocontainer img {
     margin: 10px auto;
@@ -27,8 +34,8 @@
   }
   .weathersummary {
     position: absolute;
-    top: 30px;
-    left: 40px;
+    top: 25px;
+    left: 25px;
     background: radial-gradient(white, rgb(107, 190, 218));
     border: 1px solid lightblue;
     padding: 1rem;

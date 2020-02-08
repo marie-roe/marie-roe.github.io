@@ -9,7 +9,7 @@ body {
 }
 main {
 max-width: 930px;
-margin:1.5em auto;
+margin: 1.5rem auto;
 }
 header {
   display: flex;
@@ -24,26 +24,39 @@ header, footer {
   color: white;
 }
 nav {
+  margin: 0 auto;
   display: block;
   color:white;
   padding: .75em;
   text-align: left;
+  background-color: #31708e;
   
 }
-nav ul {
+.navlist {
   list-style: none;
+  padding: 0;
 }
-nav li a {
+.navlist li {
+  display:none;
+}
+.navlist li:first-child {
+display:block;
+}
+.navlist a {
+  display: block;
   text-decoration: none;
   color: white;
 }
 nav a.active {
-  background-color: navy;
-  color:white;
+  color:goldenrod;
+  font-weight: bold;
 }
 nav a:hover {
   color:goldenrod;
   font-weight: 700;
+}
+.responsive li {
+  display: block;
 }
 h2 {
   text-align: center;
@@ -66,6 +79,9 @@ h2 {
   margin: 2rem;
   opacity: .8;
 
+}
+.fivetext {
+  display:none;
 }
 .fiveday {
   display:none;
