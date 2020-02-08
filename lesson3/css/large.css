@@ -1,10 +1,7 @@
 @media only screen and (min-width:64em) {
-  body{
-    width:64em;
-    max-width:900px;
-  }
-  main {
-    display: flex;
-    grid-template-columns: span 1;
-  }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 }

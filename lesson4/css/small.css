@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Vidaloka&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
 
 body {
   margin: 0;
@@ -87,6 +88,7 @@ main {
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   padding: 1em;
+  max-width: 930px;
 }
 .prestonbox {
   background-color: #8fc1e3;

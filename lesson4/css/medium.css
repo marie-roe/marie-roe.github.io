@@ -1,8 +1,6 @@
 
 	@media only screen and (min-width:768px) {
-		body {
-			width:768px;
-		}
+	
 		footer {
 			width: 42em;
 		}
@@ -13,9 +11,7 @@
 		.logoimage {
 			width: 45px;
 		}
-		main {
-			width: 40em;
-		}
+	
 	
 		nav ul.navlist {
 			display: flex;

@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers|Montserrat&display=swap');
 
-
+body {
+  background-color:#687864;
+  margin: 0;
+}
 header {
   background-color: #31708e;
   color:white;
   padding: 8px;
-  
 }
 
 header h1 {
@@ -19,9 +21,7 @@ header, footer {
 .logoimage {
   max-width: 100px;
 }
-body {
-  background-color:#687864;
-}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Bangers', cursive;
   letter-spacing: 2px;
@@ -30,7 +30,6 @@ main {
   background-color:#687864;
   color:#f7f9fb;
   margin: 1.5em auto;
-  max-width: 900px;
   line-height: 1.5;
   display:grid;
   grid-template-columns: 1fr;
@@ -42,18 +41,26 @@ h2,h3,h4 {
   color:#8fc1e3;
   text-align: center;
 }
+nav {
+  background-color: white;
+  color: #31708e;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 li {
   display: inline;
+  list-style-type: none;
+  margin: 0 2vw;
+  font-size: 3vh;
 }
-header li a { 
+li a {
   text-decoration: none;
-  padding: 10px;
-  color: white;
 }
 li a:hover {
   color: #8FC1E3;
@@ -65,10 +72,10 @@ section {
   margin: 10px;
 }
 footer {
-  padding:.5px;
+  padding:.5em;
 }
 footer a {
-  color: goldenrod;
+  color:white;
 }
 footer a:hover {
   color:goldenrod;

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  background-color: white;
+  box-sizing: border-box;
+}
+main {
+max-width: 930px;
+margin:1.5em auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #31708e;
+  color: white;
+}
+nav {
+  display: block;
+  color:white;
+  padding: .75em;
+  text-align: left;
+  
+}
+nav ul {
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+nav a.active {
+  background-color: navy;
+  color:white;
+}
+nav a:hover {
+  color:goldenrod;
+  font-weight: 700;
+}
+h2 {
+  text-align: center;
+}
+.herocontainer {
+  margin: 10px auto;
+  position: relative;
+  width:480px;
+}
+.herocontainer img {
+  margin: 10px auto;
+  background-color:#eee;
+  border: 1px solid #eee;
+  width: 100%;
+  height: 200px;
+}
+.prestonbox, .contactbox {
+  background-color:lightgrey;
+  padding:25px;
+  margin: 2rem;
+  opacity: .8;
+
+}
+.fiveday {
+  display:none;
+}
+.col {
+  flex: 1 1 100%;
+  border-left: 1px solid black;
+  background-color: #eee; 
+  font-size: 13px;
+  text-align: center;
+}
+.day {
+  display:block;
+  padding: 3px;
+  font-weight:bold;
+  font-size: 13px;
+  border-bottom: 1px solid black;
+}
+.temp {
+  display: block;
+  padding: 4px;
+}
+.fiveday div:first-child {
+  border-left:none;
+}
+.balloons {
+  box-shadow: 3px 3px 20px grey;
+}
+
+.prestonmap {
+  display:none;
+}
+footer {
+padding:.2em;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: goldenrod;
+}
