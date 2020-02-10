@@ -23,7 +23,11 @@ header, footer {
   color: white;
 }
 
-
+#pancake {
+  background-color: gold;
+  padding:.2px;
+  text-align: center;
+}
 nav {
   margin: 0 auto;
   display: block;
@@ -121,7 +125,7 @@ h2 {
 }
 
 .prestonmap {
-float:left;
+display: none;
 }
 .contact {
   background-color: lightgrey;

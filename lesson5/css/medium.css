@@ -1,5 +1,11 @@
 @media screen and (min-width: 40em) {
- .navlist {
+ header {
+   display:flex;
+ }
+ .logoimage {
+   white-space: nowrap;
+ }
+  .navlist {
    display: flex;
  }
  .navlist li {
@@ -16,6 +22,8 @@
     border-bottom: 3px solid white;
     background-color: transparent;
     color:white;
+    font-weight: bold;
+  
   }
   nav a:hover {
     border-bottom: 3px solid white;
@@ -51,7 +59,9 @@
   .prestonmap {
     width:300px;
     box-shadow: 5px 5px 20px #777;
-  }
+    float:left;
+    display:flex;
+    }
   
   .social img {
     width:30px;
