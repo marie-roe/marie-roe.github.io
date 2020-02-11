@@ -1,9 +1,7 @@
 @media screen and (min-width: 40em) {
  header {
    display:flex;
- }
- .logoimage {
-   white-space: nowrap;
+   flex-direction: column;
  }
   .navlist {
    display: flex;
