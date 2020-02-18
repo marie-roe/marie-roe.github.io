@@ -26,10 +26,11 @@
     </div>
     <header>
       <img src="images/tridentlogo.png" alt="logo" class="logoimage" />
-     <div class="headertext">
-      <h1>Poseidon's Predictions</h1>
-       <div class="motto">Where Weather is Life</div></div>
-      </header>
+      <div class="headertext">
+        <h1>Poseidon's Predictions</h1>
+        <div class="motto">Where Weather is Life</div>
+      </div>
+    </header>
     <nav>
       <ul class="navlist responsive">
         <li><a class="menuTab" href="#">&#9776; Menu</a></li>
@@ -46,19 +47,17 @@
       <h2>Preston, Idaho</h2>
       <div class="herocontainer">
         <picture>
-          <source  media="(max-width:399px)" srcset="images/cit230image_250.jpg">
-            <source  media=
-            "(min-width:300px) and (max-width:599px)" srcset="images/cit230image_400.jpg">
-              <img src="images/cit230image_600.jpg" alt="weatherscape">
-              
+            <source srcset="images/cit230image_400.jpg" media="(min-width:500px) and (max-width:799px)">
+              <source srcset="images/cit230image_600.jpg" media="(min-width:800)">
+          <img src="images/cit230image_250.jpg" alt="weatherscape" />
         </picture>
-      
+
         <section class="weathersummary">
           <h3>Weather Summary</h3>
           <p>Currently: Cloudy</p>
           <p>High: <span id="temperature">40</span> ° F</p>
           <p>Windchill: <span id="windchill"></span></p>
-          <p>Humidity: 54% </p>
+          <p>Humidity: 54%</p>
           <p>Windspeed: <span id="windspeed">6</span>mph</p>
         </section>
       </div>
