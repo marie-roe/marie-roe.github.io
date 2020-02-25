@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+/* Overall site specs*/
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  background-color: white;
+  box-sizing: border-box;
+}
+main {
+  max-width: 930px;
+  margin: 1.5rem auto;
+}
+header {
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5%;
+}
+.logoimage {
+  margin-right: 1rem;
+}
+header,
+footer {
+  text-align: center;
+  background-color: #31708e;
+  color: white;
+}
+
+#pancake {
+  background-color: gold;
+  padding: 0.2px;
+  text-align: center;
+}
+nav {
+  margin: 0 auto;
+  display: block;
+  color: white;
+  padding: 0.75em;
+  text-align: left;
+  background-color: #31708e;
+}
+.navlist {
+  list-style: none;
+  padding: 0;
+}
+.navlist li {
+  display: none;
+}
+.navlist li:first-child {
+  display: block;
+}
+.navlist a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+nav a.active {
+  color: goldenrod;
+  font-weight: bold;
+}
+nav a:hover {
+  color: goldenrod;
+  font-weight: 700;
+}
+.responsive li {
+  display: block;
+}
+h2 {
+  text-align: center;
+}
+
+/* Preston Town Page*/
+.herocontainer {
+  margin: 10px auto;
+  position: relative;
+  width: 480px;
+}
+.herocontainer img {
+  margin: 10px auto;
+  background-color: #eee;
+  border: 1px solid #eee;
+  width: 100%;
+
+}
+.weathersummary {
+  background: radial-gradient(white, rgb(107, 190, 218));
+  border: 1px solid lightblue;
+  padding: 1rem;
+  box-shadow: 5px 5px 30px #777;
+  opacity: 0.9;
+  text-align: center;
+}
+.prestonbox,
+.contactbox {
+  background-color: lightgrey;
+  padding: 25px;
+  margin: 2rem;
+  opacity: 0.8;
+}
+
+.fivetext {
+  display: none;
+}
+.fiveday {
+  display: none;
+}
+.col {
+  flex: 1 1 100%;
+  border-left: 1px solid black;
+  background-color: #eee;
+  font-size: 13px;
+  text-align: center;
+}
+.day {
+  display: block;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 1px solid black;
+  background-color: #31708e;
+  color:white;
+}
+.temp {
+  display: block;
+  padding: 4px;
+}
+.fiveday div:first-child {
+  border-left: none;
+}
+.balloons {
+  box-shadow: 3px 3px 20px grey;
+}
+
+.prestonmap {
+  display: none;
+}
+.contact {
+  background-color: lightgrey;
+  padding: 20px;
+  text-align: center;
+}
+
+.social img {
+  width: 20px;
+  padding: 10px;
+}
+.social a:hover {
+  opacity: 0.5;
+}
+
+/* Gallery page*/
+
+img {
+  border: 1px solid black;
+    padding: 2px;
+    filter: blur(0em);
+    transition: filter .5s;
+  }
+  img[data-src] {
+    filter:blur (.5em);
+  }
+  .gallerypic {
+    display:grid;
+    grid-template-columns: 1fr;
+    
+  }
+
+/* General footer*/
+footer {
+  padding: 0.2em;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: goldenrod;
+}
+
+
+
+
+
+
+
