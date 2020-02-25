@@ -155,6 +155,7 @@ img {
     padding: 2px;
     filter: blur(0em);
     transition: filter .5s;
+    align-items: center;
   }
   img[data-src] {
     filter:blur (.5em);
@@ -166,6 +167,7 @@ img {
   figure {
     background-color:#dcdcdc;
     padding:8px;
+  
   }
   figcaption {
     background-color: #dcdcdc;
