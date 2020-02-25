@@ -162,7 +162,14 @@ img {
   .gallerypic {
     display:grid;
     grid-template-columns: 1fr;
-    
+  }
+  figure {
+    background-color:#dcdcdc;
+    padding:8px;
+  }
+  figcaption {
+    background-color: #dcdcdc;
+    text-align: center;
   }
 
 /* General footer*/
