@@ -18,6 +18,7 @@ header {
 }
 .logoimage {
   margin-right: 1rem;
+  border:none;
 }
 header,
 footer {
@@ -150,7 +151,7 @@ h2 {
 
 /* Gallery page*/
 
-figure img {
+ img {
   border: 1px solid black;
     padding: 2px;
     filter: blur(0em);
@@ -159,6 +160,7 @@ figure img {
   }
   img[data-src] {
     filter:blur (.5em);
+    width: 100%;
   }
   .gallerypic {
     display:grid;
@@ -166,7 +168,7 @@ figure img {
   }
   figure {
     background-color:#dcdcdc;
-    padding:8px;
+  
   
   }
   figcaption {
