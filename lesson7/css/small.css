@@ -6,7 +6,7 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   background-color: white;
-  box-sizing: border-box;
+
 }
 main {
   max-width: 930px;
@@ -151,7 +151,11 @@ h2 {
 }
 
 /* Gallery page*/
-
+.gallerypic {
+  display:inline-grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+}
  img {
   border: 1px solid black;
     padding: 2px;
@@ -163,10 +167,7 @@ h2 {
     filter:blur (.5em);
   
   }
-  .gallerypic {
-    display:inline-grid;
-    grid-template-columns: 1fr;
-  }
+  
   figure {
     background-color:#dcdcdc;
     padding:7px;
