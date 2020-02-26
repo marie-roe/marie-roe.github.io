@@ -150,7 +150,7 @@ h2 {
 
 /* Gallery page*/
 
-img {
+figure img {
   border: 1px solid black;
     padding: 2px;
     filter: blur(0em);

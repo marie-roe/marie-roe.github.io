@@ -73,7 +73,6 @@
 
    .gallerypic {
     grid-template-columns: 1fr 1fr;
-    grid-gap:.25rem;
   }
    footer {
      width:45em;
