@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 /* Overall site specs*/
 body {
   margin: 0;
@@ -10,7 +11,7 @@ body {
 main {
   max-width: 930px;
   margin: 1.5rem auto;
-}
+  }
 header {
   justify-content: center;
   align-items: center;
@@ -160,15 +161,15 @@ h2 {
   }
   img[data-src] {
     filter:blur (.5em);
-    width: 100%;
+  
   }
   .gallerypic {
-    display:grid;
+    display:inline-grid;
     grid-template-columns: 1fr;
   }
   figure {
     background-color:#dcdcdc;
-  
+    padding:7px;
   
   }
   figcaption {
