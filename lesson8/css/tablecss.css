@@ -9,6 +9,7 @@ h1 {
 
 table {
   font-family: "Ubuntu", sans-serif;
+  margin: 0 auto;
   text-align: center;
   box-shadow: 10px 10px 10px #628ca6;
 }
