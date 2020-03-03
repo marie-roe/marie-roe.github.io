@@ -1,0 +1,82 @@
+@media screen and (min-width: 40em) {
+  header {
+    display:flex;
+  }
+   .navlist {
+    display: flex;
+  }
+  .navlist li {
+    display:block;
+    flex: 1 1 100%;
+  }
+  .navlist li a {
+    text-align: center;
+  }
+   .navlist li:first-child {
+     display: none;
+   }
+   nav a.active {
+     border-bottom: 3px solid white;
+     background-color: transparent;
+     color:white;
+     font-weight: bold;
+   
+   }
+   nav a:hover {
+     border-bottom: 3px solid white;
+   }
+   .herocontainer {
+     margin: 10px auto;
+     position: relative;
+     width: 640px;
+     padding-bottom: 15px;
+   }
+   .herocontainer img {
+     margin: 10px auto;
+     background-color: #eee;
+     border: 1px solid #eee;
+     width: 100%;
+     height: 300px;
+   }
+   .weathersummary {
+     position: absolute;
+     top: 25px;
+     left: 25px;
+   }
+   .fiveday {
+     display: flex;
+     flex-direction: row;
+     border: 1px solid black;
+   }
+   .balloons {
+     float: right;
+     margin-left: 10px;
+     padding-bottom: .5px;
+   }
+   .contactbox {
+     display:grid;
+     grid-template-columns: 1fr 1fr;
+   }
+   .prestonmap {
+     width:300px;
+     box-shadow: 5px 5px 20px #777;
+     display:flex;
+     grid-column: 1/3;
+     }
+     .contact {
+       grid-column: 3/4;
+     }
+     
+   .social img {
+     width:30px;
+   }
+
+   .gallerypic {
+    grid-template-columns: 1fr 1fr;
+  }
+   footer {
+     width:45em;
+     margin: 0 auto;
+   }
+ }
+ 
