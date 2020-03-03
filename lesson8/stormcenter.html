@@ -43,7 +43,8 @@
         <fieldset>
           <legend>Reportee Information</legend>
           <label class="top">
-            Full Name* <input type="text" name="fname" pattern="[A-Za-z]{5}" required
+            Full Name*
+            <input type="text" name="fname" pattern="[A-Za-z]{5}" required
           /></label>
           <label class="top"
             >Email<input
@@ -58,13 +59,15 @@
               placeholder="0005551234"
               required
           /></label>
-          <label class="top">Zip Code*<input type="number" name="zip" required/></label>
+          <label class="top"
+            >Zip Code*<input type="number" name="zip" required
+          /></label>
         </fieldset>
 
         <fieldset>
           <legend>Storm Report</legend>
           <label class="top">Storm Date <input type="date" name=""/></label>
-          <label  class="top" for="stormType">Storm Type </label>
+          <label class="top" for="stormType">Storm Type </label>
           <input list="storm-type" id="stormType" name="stormType" />
 
           <datalist id="storm-type">
@@ -75,27 +78,35 @@
             <option value="Tornado"> </option>
           </datalist>
 
-          <label class="top">Storm Region
+          <label class="top"
+            >Storm Region
             <select name="stormRegion">
-                <option value="">Select Region...</option>
-                <option value="preston">Preston</option>
-                <option value="sodasprings">Soda Springs</option>
-                <option value="fishhaven">Fish Haven</option>
+              <option value="">Select Region...</option>
+              <option value="preston">Preston</option>
+              <option value="sodasprings">Soda Springs</option>
+              <option value="fishhaven">Fish Haven</option>
             </select>
           </label>
-
-                
-          <label class="">User In Danger Level</label>
+          <div>In Danger Level</div>
+          <label class="side"><input type="radio" name="danger">Yes</label>
+          <label class="side"><input type="radio" name="danger">Maybe</label>
+          <label class="side"><input type="radio" name="danger">No</label>
         </fieldset>
 
         <fieldset>
           <legend>Additional Information</legend>
-          <label class="">Comments</label>
-
-          <label></label>
+          <label class="top" for="addComments">Comments</label>
+          <textarea id="addComments" rows="8" cols="50"></textarea>
         </fieldset>
+
+        <input type="submit" value="Submit Report" class="submitBtn" />
       </form>
     </main>
-    <footer></footer>
+    <footer>
+      &copy; Poseidon's Predictions |
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a> | Lavinia
+      Marie Roe | <br />
+      <span id="currentdate"></span>
+    </footer>
   </body>
 </html>
