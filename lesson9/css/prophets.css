@@ -1,0 +1,54 @@
+header, main, footer {
+  max-width:900px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 5px;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  background-color: #eee;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin:0;
+}
+
+main section {
+
+  text-align: center;
+}
+
+.cards {
+  display:grid;
+  grid-template-columns: repeat (1,1fr);
+}
+.cards section {
+  margin: .25rem;
+  padding: 2rem;
+  background-color: maroon; 
+  color: white;
+}
+
+.cards section img {
+  width: 100%;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,.7);
+}
+
+footer {
+  border-top: 1px solid #555;
+  text-align: center;
+}
+
+@media screen and (min-width: 32em and max-width: 40em) {
+  .cards {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+  @media screen and (min-width: 64em) {
+    .cards {
+      grid-template-columns: repeat(4,1fr);
+    }
+}
