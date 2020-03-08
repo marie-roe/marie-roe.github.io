@@ -2,6 +2,19 @@
   .navlist li:first-child {
     display: none;
   }
+/*<-----home page-------*/
+
+.homehero {
+  margin: 10px auto;
+  position: relative;
+  width: 930px;
+
+}
+
+/*<--------Preston--------->*/
+
+
+
   .herocontainer {
     margin: 10px auto;
     position: relative;

@@ -70,6 +70,28 @@ h2 {
   text-align: center;
 }
 
+/*------Home Page------*/
+.towns {
+  
+}
+.towns section {
+  margin: 0.25rem;
+  padding: 0.7rem;
+  
+  color: white;
+  white-space: nowrap;
+  box-shadow: 3px 3px 5px 10px lightgray;
+}
+
+.towns section img {
+  width: 100%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.towns h2, .towns h3, .towns p {
+  background-color: royalblue;
+}
+
 /* Preston Town Page*/
 .herocontainer {
   margin: 10px auto;
@@ -255,6 +277,7 @@ form label.top input:required {
  }
 
   /*-------Thank you form-------*/
+
 
   
 

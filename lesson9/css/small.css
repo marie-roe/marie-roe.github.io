@@ -70,6 +70,50 @@ nav a:hover {
 h2 {
   text-align: center;
 }
+/*------Home Page------*/
+.homehero {
+margin: 10px auto;
+position: relative;
+width: 480px;
+}
+.homehero img {
+margin: 10px auto;
+background-color: #eee;
+border: 1px solid #eee;
+width: 100%;
+}
+
+.hero {
+
+}
+.hero img {
+  float:left;
+}
+.towns {
+  display:block;
+  grid-template-columns: 1fr;
+}
+.towns section {
+  margin: 0.25rem autos;
+  padding: 0.7rem;
+  background-color: grey;
+  color: white;
+  white-space: nowrap;
+  box-shadow: 3px 3px 5px 10px lightgray;
+  text-align: center;
+  height: 200px;
+  width:50%;
+  
+}
+
+.towns section img {
+  width: 100%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+/*.towns h2, .towns h3, .towns p {
+  background-color: royalblue;
+}*/
 
 /* Preston Town Page*/
 .herocontainer {
