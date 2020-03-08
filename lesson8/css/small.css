@@ -9,7 +9,7 @@ body {
 }
 main {
   max-width: 930px;
-  margin: 1.5rem auto;
+  margin: 0 auto;
   }
 header {
   justify-content: center;
@@ -180,12 +180,10 @@ h2 {
   /*-------Storm Center Form---------------*/
   .stormpage {
     background-image: url(../images/sunnyclouds.jpg);
-    margin: -1em;
-    width: 100%;
-    height:auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  
   }
 
   .stormpage h2 {
@@ -193,7 +191,7 @@ h2 {
   }
 
   form fieldset {
-    margin: 2rem 0;
+    margin: 1em auto;
     border: 2px solid white;
     border-radius: 10px;
     padding: 2rem;
@@ -253,6 +251,7 @@ form label.top input:required {
   margin: 0 0 2rem 2%;
   width: 96%;
   max-width: 20rem;
+
  }
 
   /*-------Thank you form-------*/
