@@ -94,14 +94,14 @@ width: 100%;
   grid-template-columns: 1fr;
 }
 .towns section {
-  margin: 0.25rem autos;
+  margin: 0.25rem auto;
   padding: 0.7rem;
-  background-color: grey;
+  background-color: #4771a5;
   color: white;
-  white-space: nowrap;
+
   box-shadow: 3px 3px 5px 10px lightgray;
   text-align: center;
-  height: 200px;
+  height: 300px;
   width:50%;
   
 }
@@ -224,25 +224,44 @@ width: 100%;
 
   /*-------Storm Center Form---------------*/
 
+  .stormpage {
+    background-image: url(../images/sunnyclouds.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+  }
+
+  .stormpage h2 {
+    color:white;
+  }
+
   form fieldset {
-    margin: 2rem 0;
-    border: 2px solid goldenrod;
+    margin: 1em auto;
+    border: 2px solid white;
     border-radius: 10px;
     padding: 2rem;
+    max-width: 30rem;
+    justify-content: center;
+    background-color: rgba(204,204,204, 40%);
+    
+    
   }
 
   form legend  {
-      color: goldenrod;
+      color: white;
       margin: 0 1rem;
       padding: 0 .5rem;
+    
   }
 
   form label.top, form div {
     display:block;
     padding:1rem;
-    color:#445ba9;
+    color:black;
     font-size: .8rem;
     font-weight: bold;
+    
 }
 
 form label.top input, form label.top select, #addComments {
@@ -252,15 +271,15 @@ form label.top input, form label.top select, #addComments {
   border: solid 1px #999;
   border-radius: 4px;
   padding: .75rem;
-  color: #555;
+  color: black;
   width: 100%;
   max-width: 20rem;
-  background-color: rgba(0,0,0,0.1);
+  background-color: whitesmoke;
 }
 form label.side {
   display: block;
   padding: .75rem;
-  color: #555
+  color: black;
 }
 form label.top input:required {
     border-left: red solid 6px;
@@ -279,7 +298,6 @@ form label.top input:required {
   width: 96%;
   max-width: 20rem;
  }
-
   /*-------Thank you form-------*/
 
   

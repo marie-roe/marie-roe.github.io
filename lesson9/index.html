@@ -72,6 +72,35 @@
       <div class="towns">
         <section></section>
       </div>
+      <form method="get" action="thankyousub.html">
+        <fieldset>
+          <legend class="contact">Contact Us</legend>
+          <label class="top">
+            Full Name*
+            <input type="text" name="fname" pattern="[A-Za-z]{5}" required
+          /></label>
+          <label class="top"
+            >Email<input
+              type="email"
+              name="email"
+              placeholder="contact@gmail.com"
+              required
+          /></label>
+          <label class="top"
+            >Phone*<input
+              type="tel"
+              name="phone"
+              placeholder="0005551234"
+          /></label>
+        
+          <label class="top" for="addComments">Comments</label>
+          <textarea id="addComments" rows="8" cols="50"></textarea>
+        </fieldset>
+
+        
+
+        <input type="submit" value="Contact" class="submitBtn" />
+      </form>
     </main>
     <footer>
       &copy; Poseidon's Predictions |
@@ -81,5 +110,6 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/towndata.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
