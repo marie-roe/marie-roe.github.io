@@ -22,9 +22,9 @@ fetch(requestURL)
     
       //image.setAttribute('src', towns[i].photo);//
       //image.setAttribute('alt', );//
-      year.textContent = towns[i].yearFounded;
-      pop.textContent = towns[i].currentPopulation;
-      rain.textContent = towns[i].averageRainfall;
+      year.textContent = "Year Founded" + ": " + towns[i].yearFounded;
+      pop.textContent = "Population" + ": " + towns[i].currentPopulation;
+      rain.textContent = "Annual Rainfall" + ": " + towns[i].averageRainfall + " inch(es)";
 
   
       card.appendChild(h2);

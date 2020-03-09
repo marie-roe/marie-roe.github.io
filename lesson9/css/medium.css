@@ -25,6 +25,13 @@
    nav a:hover {
      border-bottom: 3px solid white;
    }
+   /*<------Home Page-----*/
+   .towns {
+    display:block;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*<-------Preston--------->*/
    .herocontainer {
      margin: 10px auto;
      position: relative;

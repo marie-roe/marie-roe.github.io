@@ -33,6 +33,8 @@ footer {
   padding: 0.2px;
   text-align: center;
 }
+/*<-----Navigation Bar------->*/
+
 nav {
   margin: 0 auto;
   display: block;
@@ -71,16 +73,19 @@ h2 {
   text-align: center;
 }
 /*------Home Page------*/
+
 .homehero {
 margin: 10px auto;
 position: relative;
 width: 480px;
+
 }
 .homehero img {
 margin: 10px auto;
 background-color: #eee;
 border: 1px solid #eee;
 width: 100%;
+
 }
 
 .hero {
@@ -88,6 +93,9 @@ width: 100%;
 }
 .hero img {
   float:left;
+  border:none;
+  padding: 8px;
+  
 }
 .towns {
   display:block;
@@ -101,8 +109,8 @@ width: 100%;
 
   box-shadow: 3px 3px 5px 10px lightgray;
   text-align: center;
-  height: 300px;
-  width:50%;
+  height: auto;
+  width:25%;
   
 }
 
@@ -195,6 +203,7 @@ width: 100%;
 }
 
 /* ----------Gallery page-----------*/
+
 .gallerypic {
   display:inline-grid;
   grid-template-columns: 1fr;
