@@ -110,13 +110,17 @@ width: 100%;
   box-shadow: 3px 3px 5px 10px lightgray;
   text-align: center;
   height: auto;
-  width:25%;
-  
+  width:25%; 
 }
 
 .towns section img {
   width: 100%;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.homepagePage {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /*.towns h2, .towns h3, .towns p {
