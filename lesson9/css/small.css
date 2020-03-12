@@ -209,7 +209,7 @@ h2 {
   box-sizing: border-box;
 }
 img {
-  border: 1px solid black;
+ /* border: 1px solid black;//*/
   padding: 2px;
   filter: blur(0em);
   transition: filter 0.5s;
