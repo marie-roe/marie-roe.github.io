@@ -93,7 +93,7 @@ h2 {
   padding: 8px;
 }
 .towns {
-  display: block;
+  display: grid;
   grid-template-columns: 1fr;
 }
 .towns section {
@@ -188,7 +188,7 @@ h2 {
   display: none;
 }
 .contact {
-  background-color: lightgrey;
+  background-color: whitesmoke;
   padding: 20px;
   text-align: center;
 }
