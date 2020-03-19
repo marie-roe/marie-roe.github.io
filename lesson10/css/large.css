@@ -1,0 +1,55 @@
+@media screen and (min-width: 64em) {
+  .navlist li:first-child {
+    display: none;
+  }
+/*<-----home page-------*/
+
+.homehero {
+  margin: 10px auto;
+  position: relative;
+  width: 930px;
+}
+
+.towns {
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+/*<--------Preston--------->*/
+
+
+
+  .herocontainer {
+    margin: 10px auto;
+    position: relative;
+    width: 930px;
+    height: 450px;
+  }
+
+  .herocontainer img {
+  
+  }
+  .weathersummary {
+    top: 40px;
+    left: 40px;
+  }
+  .prestonmap {
+    width: 425px;
+  }
+ 
+  .social img {
+    width:30px;
+  }
+
+  .gallerypic {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  figure:hover {
+    box-shadow: 5px 5px 5px 10px #888888;
+  }
+  
+  footer {
+    width:52em;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
