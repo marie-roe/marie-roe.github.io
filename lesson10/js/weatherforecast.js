@@ -1,7 +1,7 @@
 let weatherKey = "44294ac7db20b57cd171a76c2466d031";
 let id="";
 
-switch(document.getElementById('').innerHTML) {
+switch(document.getElementById('town').innerHTML) {
   case "Preston":
     id = "5604473";
     break;
@@ -29,10 +29,12 @@ fetch(apiURL)
 
       document.getElementById("day" + i).textContent = day;
 
-      const imagesrc =(`https://openweathermap.org/img/w/${fiveday[i].weather[0].icon}.png`);
+     // const imagesrc =(`https://openweathermap.org/img/w/${fiveday[i].weather[0].icon}.png`);
 
-      document.getElementById("icon" + i).setAttribute("src", "imagesrc");
-      document.getElementById("icon" + i).setAttribute("alt", fiveday[i].weather[0].description);
+      //document.getElementById("icon").setAttribute("src", "imagesrc");
+
+      //const describe = jsObject.weather[0].description;
+     // document.getElementById("icon" + i).setAttribute("alt", describe);
       
     }
   });
