@@ -27,17 +27,44 @@ fetch(apiURL)
       let d = new Date(fiveday[i].dt_txt);
       let day  = daysofWeek[d.getDay()];
 
-      document.getElementById("day" + i).textContent = day;
+      document.getElementsByClassName("day" + i).textContent = day;
 
-     // const imagesrc =(`https://openweathermap.org/img/w/${fiveday[i].weather[0].icon}.png`);
+      const imagesrc =(`https://openweathermap.org/img/w/${fiveday[i].weather[0].icon}.png`);
 
-      //document.getElementById("icon").setAttribute("src", "imagesrc");
+      document.getElementById("icon" + i).setAttribute("src", "imagesrc");
 
-      //const describe = jsObject.weather[0].description;
-     // document.getElementById("icon" + i).setAttribute("alt", describe);
+      const describe = jsObject.weather[0].description;
+      document.getElementById("icon" + i).setAttribute("alt", describe);
       
     }
   });
 
 
 
+  //const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;  // note the concatenation
+
+// const desc = jsObject.weather[0].description;  // note how we reference the weather array
+  //document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+ // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+ // document.getElementById('icon').setAttribute('alt', desc);
+
+
+ const currentWeather = 'http://api.openweathermap.org/data/2.5/weather?id=${id}&units=imperial&APPID={weatherKey}';
+
+fetch(currentWeather)
+  .then((response) =>response.json())
+  .then((jsObject) => {
+
+    const currently = document.querySelector('#sky');
+    currently.textContent = jsObject.weather[0].main;
+
+    const currentTemp = document.querySelector('#temperature');
+    currentTemp.textContent = jsObject.main.temp;
+
+    const humid = document.querySelector('#humidity');
+    humid.textContent = jsObject.main.humidity;
+
+    const ws = document.querySelector('#windspeed');
+    ws.textContent = jsObject.wind.speed;
+ 
+  });
