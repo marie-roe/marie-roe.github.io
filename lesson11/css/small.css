@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+/* Overall site specs*/
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  background-color: white;
+}
+main {
+  max-width: 930px;
+  margin: 1.5rem auto;
+}
+header {
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5%;
+}
+.logoimage {
+  margin-right: 1rem;
+  border: none;
+}
+header,
+footer {
+  text-align: center;
+  background-color: #31708e;
+  color: white;
+}
+
+#pancake {
+  background-color: gold;
+  padding: 0.2px;
+  text-align: center;
+}
+/*<-----Navigation Bar------->*/
+
+nav {
+  margin: 0 auto;
+  display: block;
+  color: white;
+  padding: 0.75em;
+  text-align: left;
+  background-color: #31708e;
+}
+.navlist {
+  list-style: none;
+  padding: 0;
+}
+.navlist li {
+  display: none;
+}
+.navlist li:first-child {
+  display: block;
+}
+.navlist a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+nav a.active {
+  color: goldenrod;
+  font-weight: bold;
+}
+nav a:hover {
+  color: goldenrod;
+  font-weight: 700;
+}
+.responsive li {
+  display: block;
+}
+h2 {
+  text-align: center;
+}
+/*------Home Page------*/
+
+.homehero {
+  margin: 10px auto;
+  position: relative;
+  width: 480px;
+}
+.homehero img {
+  margin: 10px auto;
+  background-color: #eee;
+  border: 1px solid #eee;
+  width: 100%;
+}
+
+.hero {
+}
+.hero img {
+  float: left;
+  border: none;
+  padding: 8px;
+}
+.towns {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.towns section {
+  margin: 0.25rem auto;
+  padding: 0.7rem;
+  background-color: #4771a5;
+  color: white;
+  box-shadow: 3px 3px 5px 10px lightgray;
+  text-align: center;
+  height: auto;
+}
+.towns h3 {
+  font-size: 1rem;
+}
+
+.towns section img {
+  width: 100%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.homepagePage {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*.towns h2, .towns h3, .towns p {
+  background-color: royalblue;
+}*/
+
+/* Preston Town Page*/
+.herocontainer {
+  margin: 10px auto;
+  position: relative;
+  width: 480px;
+}
+.herocontainer img {
+  margin: 10px auto;
+  background-color: #eee;
+  border: 1px solid #eee;
+  width: 100%;
+}
+.weathersummary {
+  background: radial-gradient(white, rgb(107, 190, 218));
+  border: 1px solid lightblue;
+  padding: 1rem;
+  box-shadow: 5px 5px 30px #777;
+  opacity: 0.9;
+  text-align: center;
+}
+.prestonbox,
+.contactbox {
+  background-color: lightgrey;
+  padding: 25px;
+  margin: 2rem;
+  opacity: 0.8;
+}
+
+.fivetext {
+  display: none;
+}
+.fiveday {
+  display: none;
+}
+.col {
+  flex: 1 1 100%;
+  border-left: 1px solid black;
+  background-color: #eee;
+  font-size: 13px;
+  text-align: center;
+}
+.day {
+  display: block;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 1px solid black;
+  background-color: #31708e;
+  color: white;
+}
+.temp {
+  display: block;
+  padding: 4px;
+}
+.fiveday div:first-child {
+  border-left: none;
+}
+.balloons {
+  box-shadow: 3px 3px 20px grey;
+}
+
+.prestonmap {
+  display: none;
+}
+.contact {
+  background-color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+}
+
+.social img {
+  width: 20px;
+  padding: 10px;
+}
+.social a:hover {
+  opacity: 0.5;
+}
+
+/* ----------Gallery page-----------*/
+
+.gallerypic {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+}
+img {
+ /* border: 1px solid black;//*/
+  padding: 2px;
+  filter: blur(0em);
+  transition: filter 0.5s;
+  align-items: center;
+}
+img[data-src] {
+  filter: blur (0.5em);
+}
+
+figure {
+  background-color: #dcdcdc;
+  padding: 7px;
+}
+figcaption {
+  background-color: #dcdcdc;
+  text-align: center;
+}
+
+/*-------Storm Center Form---------------*/
+
+.stormpage {
+  background-image: url(../images/sunnyclouds.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.stormpage h2 {
+  color: white;
+}
+
+form fieldset {
+  margin: 1em auto;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 30rem;
+  justify-content: center;
+  background-color: rgba(204, 204, 204, 40%);
+}
+
+form legend {
+  color: white;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding: 1rem;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+form label.top input,
+form label.top select,
+#addComments {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: black;
+  width: 100%;
+  max-width: 20rem;
+  background-color: whitesmoke;
+}
+form label.side {
+  display: block;
+  padding: 0.75rem;
+  color: black;
+}
+form label.top input:required {
+  border-left: red solid 6px;
+}
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #445ba9;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+
+}
+/*-------Thank you form-------*/
+
+/*-------- General footer--------------*/
+footer {
+  padding: 0.2em;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: goldenrod;
+}
