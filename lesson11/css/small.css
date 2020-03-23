@@ -234,7 +234,7 @@ figcaption {
 }
 
 .stormpage h2 {
-  color: white;
+  color: orange;
 }
 
 form fieldset {
@@ -303,6 +303,10 @@ form input.submitBtn {
 }
 /*-------Thank you form-------*/
 
+.stormReport {
+  text-align: center;
+ 
+}
 /*-------- General footer--------------*/
 footer {
   padding: 0.2em;
