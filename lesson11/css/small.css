@@ -7,10 +7,7 @@ body {
   line-height: 1.5;
   background-color: white;
 }
-main {
-  max-width: 930px;
-  margin: 1.5rem auto;
-}
+
 header {
   justify-content: center;
   align-items: center;
@@ -23,7 +20,7 @@ header {
 header,
 footer {
   text-align: center;
-  background-color: #31708e;
+  background-color: #286fb4;
   color: white;
 }
 
@@ -40,7 +37,7 @@ nav {
   color: white;
   padding: 0.75em;
   text-align: left;
-  background-color: #31708e;
+  background-color: #286fb4;
 }
 .navlist {
   list-style: none;
@@ -85,8 +82,7 @@ h2 {
   width: 100%;
 }
 
-.hero {
-}
+
 .hero img {
   float: left;
   border: none;
@@ -114,7 +110,7 @@ h2 {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
-.homepagePage {
+.homepage {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -136,7 +132,7 @@ h2 {
   width: 100%;
 }
 .weathersummary {
-  background: radial-gradient(white, rgb(107, 190, 218));
+  background: radial-gradient(white, rgb(176, 221, 228));
   border: 1px solid lightblue;
   padding: 1rem;
   box-shadow: 5px 5px 30px #777;
@@ -145,10 +141,10 @@ h2 {
 }
 .prestonbox,
 .contactbox {
-  background-color: lightgrey;
+  background-color: #e2f0f9;
   padding: 25px;
   margin: 2rem;
-  opacity: 0.8;
+ 
 }
 
 .fivetext {
@@ -211,12 +207,12 @@ h2 {
 img {
  /* border: 1px solid black;//*/
   padding: 2px;
-  filter: blur(0em);
   transition: filter 0.5s;
   align-items: center;
 }
+
 img[data-src] {
-  filter: blur (0.5em);
+  filter: blur(0.5em);
 }
 
 figure {
@@ -283,6 +279,9 @@ form label.side {
   display: block;
   padding: 0.75rem;
   color: black;
+}
+#rating {
+  color:black;
 }
 form label.top input:required {
   border-left: red solid 6px;

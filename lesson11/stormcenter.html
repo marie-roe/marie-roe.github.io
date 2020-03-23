@@ -67,7 +67,7 @@
 
         <fieldset>
           <legend>Storm Report</legend>
-          <label class="top">Storm Date <input type="date" name=""/></label>
+          <label class="top">Storm Date <input type="date" name="stormReport"/></label>
           <label class="top" for="stormType">Storm Type </label>
           <input list="storm-type" id="stormType" name="stormType" />
 
@@ -78,6 +78,26 @@
             <option value="Thunderstorm"> </option>
             <option value="Tornado"> </option>
           </datalist>
+        
+            
+            <label class="top" for="rating">Storm Severity Rating: &nbsp;&nbsp;&nbsp;
+          <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+              <span id="ratingvalue">10</span>
+          </label>
+      
+            <datalist id="tickmarks">
+        <option value="0">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5">
+        <option value="6">
+        <option value="7">
+        <option value="8">
+        <option value="9">
+        <option value="10">
+      </datalist>
 
           <label class="top"
             >Storm Region
@@ -88,6 +108,7 @@
               <option value="fishhaven">Fish Haven</option>
             </select>
           </label>
+        
           <div>In Danger Level</div>
           <label class="side"><input type="radio" name="danger">Yes</label>
           <label class="side"><input type="radio" name="danger">Maybe</label>
@@ -110,5 +131,6 @@
       <span id="currentdate"></span>
     </footer>
     <script src="js/currentdate.js"></script>
+    <script src="js/formrating.js"></script>
   </body>
 </html>
