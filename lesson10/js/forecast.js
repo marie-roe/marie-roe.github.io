@@ -4,12 +4,20 @@ fetch(apiURL)
   .then((response) =>response.json())
   .then((jsObject) => {
 
-    let fivedayForecast = [];
-
+    
     const fivedayForecast= jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+    
+
 
     for (let i=0; i<fivedayForecast.length; i++) {
       document.getElementById('forecast${i+1}').textContent[i].main.temp;
-    
+
+
+    let daysofWeek = ["Sun", "Mon", "Tue", "Wed","Thurs", "Fri","Sat"];
+
+    let d = new Date(fivedayForecast[i].dt-txt);
+    let day = daysofWeek[d.getDay()];
+
+
     }
   });

@@ -29,7 +29,7 @@ fetch(apiURL)
       let d = new Date(fiveday[i].dt_txt);
       let day  = daysofWeek[d.getDay()];
 
-      document.getElementsByClassName("day" + i).textContent = day;
+      document.getElementById("day" + i).textContent = day;
 
       const imagesrc =(`https://openweathermap.org/img/w/${fiveday[i].weather[0].icon}.png`);
 

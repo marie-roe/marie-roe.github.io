@@ -5,7 +5,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-   
+   console.log(jsonObject);
     const towns = jsonObject['towns'];
 
      for (let i=0; i<2; i++) {
@@ -15,17 +15,18 @@ fetch(requestURL)
       let year = document.createElement('p');
       let pop = document.createElement('p');
       let rain  = document.createElement('p');
-      //let image = document.createElement('img');//
+      let image = document.createElement('img');
       
 
       h2.textContent = towns[i].name; 
       h3.textContent = towns[i].motto;
     
-      //image.setAttribute('src', images/towns[i].photo);//
-      //image.setAttribute('alt', );//
+      
       year.textContent = "Year Founded" + ": " + towns[i].yearFounded;
       pop.textContent = "Population" + ": " + towns[i].currentPopulation;
       rain.textContent = "Annual Rainfall" + ": " + towns[i].averageRainfall + " inch(es)";
+      image.setAttribute('src', "images/" + towns.photo);
+      image.setAttribute('alt',"images/" + towns.name);
 
   
       card.appendChild(h2);
@@ -33,7 +34,7 @@ fetch(requestURL)
       card.appendChild(year);
       card.appendChild(pop);
       card.appendChild(rain);
-      //card.appendChild(image);//
+      card.appendChild(image);
       
 
       document.querySelector('.towns').appendChild(card);

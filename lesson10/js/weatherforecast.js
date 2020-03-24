@@ -5,10 +5,10 @@ switch(document.getElementById('town').innerHTML) {
   case "Preston":
     id = "5604473";
     break;
-  case "SodaSprings":
+  case "Soda Springs":
     id = "5607916";
     break;
-  case "FishHaven":
+  case "Fish Haven":
     id = "5585010";
     break;
 }
@@ -29,7 +29,7 @@ fetch(apiURL)
       let d = new Date(fiveday[i].dt_txt);
       let day  = daysofWeek[d.getDay()];
 
-      document.getElementById("day" + i).textContent = day;
+      document.getElementById("day" + 1 ).textContent = day;
 
       const imagesrc =(`https://openweathermap.org/img/w/${fiveday[i].weather[0].icon}.png`);
 
