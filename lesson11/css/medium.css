@@ -26,10 +26,11 @@
      border-bottom: 3px solid white;
    }
    /*<------Home Page-----*/
-   .towns {
-
-    grid-template-columns: 1fr 1fr;
-  }
+   .towns section {
+   }
+    
+    
+  
 
   .homepage {
 

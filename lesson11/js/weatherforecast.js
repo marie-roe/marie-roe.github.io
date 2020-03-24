@@ -1,5 +1,5 @@
 let weatherKey = "44294ac7db20b57cd171a76c2466d031";
-let id="";
+let id=" ";
 
 switch(document.getElementById('town').innerHTML) {
   case "Preston":
@@ -14,7 +14,7 @@ switch(document.getElementById('town').innerHTML) {
 }
 
 
-const apiURL = `https://api.openweathermap.org/data/2.5/forecast?id=${id}&units=imperial&&APPID=${weatherKey}`;
+const apiURL = `https://api.openweathermap.org/data/2.5/forecast?id=${id}&units=imperial&APPID=${weatherKey}`;
 
 
 fetch(apiURL)
@@ -29,7 +29,7 @@ fetch(apiURL)
       let d = new Date(fiveday[i].dt_txt);
       let day  = daysofWeek[d.getDay()];
 
-      document.getElementById("day" + i).textContent = day;
+      document.getElementsByClassName("day" + i).textContent = day;
 
       const imagesrc =(`https://openweathermap.org/img/w/${fiveday[i].weather[0].icon}.png`);
 
@@ -51,7 +51,7 @@ fetch(apiURL)
  // document.getElementById('icon').setAttribute('alt', desc);
 
 
- const currentWeather = 'https://api.openweathermap.org/data/2.5/weather?id=${id}&units=imperial&APPID={weatherKey}';
+ const currentWeather = 'http://api.openweathermap.org/data/2.5/weather?id=${id}&units=imperial&APPID={weatherKey}';
 
 fetch(currentWeather)
   .then((response) =>response.json())
