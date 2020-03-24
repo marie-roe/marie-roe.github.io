@@ -1,12 +1,12 @@
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
-  .then(function (response) {
+  .then(function(response) {
     return response.json();
   })
-  .then(function (jsonObject) {
+  .then(function(jsonObject) {
    
-    const towns = jsonObject['towns'];
+    const towns = jsonObject["towns"];
 
     for (let i=0; i<towns.length; i++) {
      if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
@@ -24,7 +24,7 @@ fetch(requestURL)
       year.textContent = "Year Founded" + ": " + towns[i].yearFounded;
       pop.textContent = "Population" + ": " + towns[i].currentPopulation;
       rain.textContent = "Annual Rainfall" + ": " + towns[i].averageRainfall + " inch(es)";
-      image.setAttribute('src', "images/" + towns.photo);
+      image.setAttribute('src', "images/" + towns[i].photo);
       image.setAttribute('alt',towns[i].name);
 
   
