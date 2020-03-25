@@ -1,4 +1,4 @@
-/*let weatherKey = "44294ac7db20b57cd171a76c2466d031";
+/*let weatherKey = "933d35441b53286a49752a15f62023cb";
 let id="5604473";*/
 
 /*switch(document.getElementById('town').innerHTML) {
@@ -12,10 +12,10 @@ let id="5604473";*/
     id = "5585010";
     break;
 }*/
-const currentWeather = `https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&&APPID=44294ac7db20b57cd171a762466d031`
+const currentWeather = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&&APPID=933d35441b53286a49752a15f62023cb"
 
-fetch(currentWeather)
-  .then((response) =>response.json())
+fetch(currentWeather) 
+  .then((response) => response.json())
   .then((jsObject) => {
 
     document.getElementById("sky").textContent=jsObject.weather[0].description;
@@ -26,4 +26,4 @@ fetch(currentWeather)
 
     document.getElementById("windspeed").textContent = jsObject.wind.speed;
  
-  });
+ });

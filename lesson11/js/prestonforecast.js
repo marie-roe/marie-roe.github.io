@@ -1,8 +1,8 @@
-/*let weatherKey = "44294ac7db20b57cd171a76c2466d031";
+/*let weatherKey = "933d35441b53286a49752a15f62023cb";
 let id="5604473";*/
 
 
-const apiURL = `'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=44294ac7db20b57cd171a762466d031'`;
+const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=933d35441b53286a49752a15f62023cb";
 
 
 fetch(apiURL)
