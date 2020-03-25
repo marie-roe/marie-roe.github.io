@@ -1,7 +1,7 @@
 let weatherKey = "44294ac7db20b57cd171a76c2466d031";
-let id=" ";
+let id = " ";
 
-switch(document.getElementById('town').innerHTML) {
+switch (document.getElementById("town").innerHTML) {
   case "Preston":
     id = "5604473";
     break;
@@ -13,60 +13,52 @@ switch(document.getElementById('town').innerHTML) {
     break;
 }
 
-
 const apiURL = `https://api.openweathermap.org/data/2.5/forecast?id=${id}&units=imperial&APPID=${weatherKey}`;
-
 
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-   
-    let fiveday = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-    let daysofWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    
+    let fiveday= jsObject.list.filter(x => x.dt_txt.includes(`18:00:00`));
+    //console.log(jsObject);
+    let daysofWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-    for (let i=0; i<fiveday.length; i++) {
+    for (let i = 0; i < fiveday.length; i++) {
       let d = new Date(fiveday[i].dt_txt);
-      let day  = daysofWeek[d.getDay()];
+      let day = daysofWeek[d.getDay()];
 
       document.getElementById("day" + i).textContent = day;
 
-      const imagesrc =(`https://openweathermap.org/img/w/${fiveday[i].weather[0].icon}.png`);
+      const imagesrc = `https://openweathermap.org/img/w/${fiveday[i].weather[0].icon}.png`;
 
-      document.getElementById("icon" + i).setAttribute("src", "imagesrc");
+      document.getElementById(`icon${i + 1}`).setAttribute("src", "imagesrc");
 
       const describe = jsObject.weather[0].description;
-      document.getElementById("icon" + i).setAttribute("alt", describe);
-      
+      document.getElementById(`icon${i + 1}`).setAttribute("alt", describe);
     }
   });
 
-
-
-  //const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;  // note the concatenation
+//const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;  // note the concatenation
 
 // const desc = jsObject.weather[0].description;  // note how we reference the weather array
-  //document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
- // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
- // document.getElementById('icon').setAttribute('alt', desc);
+//document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+// document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+// document.getElementById('icon').setAttribute('alt', desc);
 
-
- const currentWeather = 'http://api.openweathermap.org/data/2.5/weather?id=${id}&units=imperial&APPID={weatherKey}';
+const currentWeather =
+  "https://api.openweathermap.org/data/2.5/weather?id=${id}&units=imperial&APPID={weatherKey}";
 
 fetch(currentWeather)
-  .then((response) =>response.json())
-  .then((jsObject) => {
-
-    const currently = document.querySelector('#sky');
+  .then(response => response.json())
+  .then(jsObject => {
+    const currently = document.querySelector("#sky");
     currently.textContent = jsObject.weather[0].main;
 
-    const currentTemp = document.querySelector('#temperature');
+    const currentTemp = document.querySelector("#temperature");
     currentTemp.textContent = jsObject.main.temp;
 
-    const humid = document.querySelector('#humidity');
+    const humid = document.querySelector("#humidity");
     humid.textContent = jsObject.main.humidity;
 
-    const ws = document.querySelector('#windspeed');
+    const ws = document.querySelector("#windspeed");
     ws.textContent = jsObject.wind.speed;
- 
   });

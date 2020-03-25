@@ -180,6 +180,17 @@ h2 {
 .balloons {
   box-shadow: 3px 3px 20px grey;
 }
+.prestonevents section, .sodaspringsevents section, .fishhavenevents section {
+ 
+  margin: 0.25rem auto;
+  padding: 0.7rem;
+  background-color: #4771a5;
+  color: white;
+  box-shadow: 3px 3px 5px 10px lightgray;
+  text-align: center;
+  height: auto;
+  
+}
 
 .prestonmap {
   display: none;
