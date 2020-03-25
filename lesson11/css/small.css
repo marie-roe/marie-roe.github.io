@@ -7,7 +7,9 @@ body {
   line-height: 1.5;
   background-color: white;
 }
-
+main{
+  padding: 1rem;
+}
 header {
   justify-content: center;
   align-items: center;

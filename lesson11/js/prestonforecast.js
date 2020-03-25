@@ -17,11 +17,11 @@ fetch(apiURL)
       let d = new Date(fiveday[i].dt_txt);
       let day  = daysofWeek[d.getDay()];
 
-      document.getElementById("day" + i).textContent = day;
+      document.getElementById("day" + [i]).textContent = day;
 
       const imagesrc =(`https://openweathermap.org/img/w/${fiveday[i].weather[0].icon}.png`);
 
-      document.getElementById("icon" + [i]).SsetAttribute("src", "imagesrc");
+      document.getElementById("icon" + [i]).setAttribute("src", "imagesrc");
 
       const describe = jsObject.weather[0].description;
       document.getElementById("icon" + i).setAttribute("alt", describe);
