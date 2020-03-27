@@ -1,20 +1,5 @@
-let weatherKey = "933d35441b53286a49752a15f62023cb";
-let id = " ";
+const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=933d35441b53286a49752a15f62023cb";
 
-switch (document.getElementById("town").innerHTML) {
-  case "Preston":
-    id = "5604473";
-    break;
-  case "SodaSprings":
-    id = "5607916";
-    break;
-  case "FishHaven":
-    id = "5585010";
-    break;
-}
-
-const currentWeather =
-  "https://api.openweathermap.org/data/2.5/weather?id=${id}&units=imperial&APPID={weatherKey}";
 
 fetch(apiURL)
   .then((response) => response.json())
