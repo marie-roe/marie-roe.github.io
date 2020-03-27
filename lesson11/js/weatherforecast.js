@@ -16,9 +16,9 @@ switch (document.getElementById("town").innerHTML) {
 const apiURL = `https://api.openweathermap.org/data/2.5/forecast?id=${id}&units=imperial&APPID=${weatherKey}`;
 
 fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    let fiveday= jsObject.list.filter(x => x.dt_txt.includes(`18:00:00`));
+  .then(response => response.json())
+  .then(jsObject => {
+    let fiveday = jsObject.list.filter(x => x.dt_txt.includes(`18:00:00`));
     //console.log(jsObject);
     let daysofWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 

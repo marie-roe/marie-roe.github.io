@@ -7,7 +7,7 @@ body {
   line-height: 1.5;
   background-color: white;
 }
-main{
+main {
   padding: 1rem;
 }
 header {
@@ -84,7 +84,6 @@ h2 {
   width: 100%;
 }
 
-
 .hero img {
   float: left;
   border: none;
@@ -102,7 +101,6 @@ h2 {
   box-shadow: 3px 3px 5px 10px lightgray;
   text-align: center;
   height: auto;
-  
 }
 .towns h3 {
   font-size: 1rem;
@@ -147,7 +145,6 @@ h2 {
   background-color: #e2f0f9;
   padding: 25px;
   margin: 2rem;
- 
 }
 
 .fivetext {
@@ -182,8 +179,9 @@ h2 {
 .balloons {
   box-shadow: 3px 3px 20px grey;
 }
-.prestonevents section, .sodaspringsevents section, .fishhavenevents section {
- 
+.prestonevents section,
+.sodaspringsevents section,
+.fishhavenevents section {
   margin: 0.25rem auto;
   padding: 0.7rem;
   background-color: #4771a5;
@@ -191,7 +189,6 @@ h2 {
   box-shadow: 3px 3px 5px 10px lightgray;
   text-align: center;
   height: auto;
-  
 }
 
 .prestonmap {
@@ -219,7 +216,7 @@ h2 {
   box-sizing: border-box;
 }
 img {
- /* border: 1px solid black;//*/
+  /* border: 1px solid black;//*/
   padding: 2px;
   transition: filter 0.5s;
   align-items: center;
@@ -295,7 +292,7 @@ form label.side {
   color: black;
 }
 #rating {
-  color:black;
+  color: black;
 }
 form label.top input:required {
   border-left: red solid 6px;
@@ -313,13 +310,11 @@ form input.submitBtn {
   margin: 0 0 2rem 2%;
   width: 96%;
   max-width: 20rem;
-
 }
 /*-------Thank you form-------*/
 
 .stormReport {
   text-align: center;
- 
 }
 /*-------- General footer--------------*/
 footer {
