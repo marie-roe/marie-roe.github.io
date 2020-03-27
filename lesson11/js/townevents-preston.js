@@ -13,7 +13,9 @@ fetch(requestURL)
 
         let event = document.createElement("p");
 
-        event.textContent = "Upcoming Events " + towns[i].events;
+        event.textContent = "Upcoming Events " + towns[i].events ;
+  
+      
 
         card.appendChild(event);
 
