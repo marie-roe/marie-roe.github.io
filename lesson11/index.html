@@ -36,7 +36,18 @@
     <main>
       <div class="homePage">
       <div class="homehero">
-        <img src="images/idahoPanorama.jpg" alt= "idaho town">
+        <picture>
+          <source
+            srcset="images/idahoPanorama.jpg"
+            media="(min-width:800px)"
+          />
+          <source
+            srcset="images/idahoPanorama.jpg"
+            media="(min-width:300px) and (max-width:799px)"
+          />
+          <img src="images/idahoPanorama.jpg" alt= "idaho town">
+        </picture>
+        
       </div>
       <div class="hero">
         <section>

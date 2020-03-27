@@ -37,7 +37,7 @@
       </ul>
     </nav>
     <main class="stormpage">
-      <br>
+      <br />
       <h2>STORM CENTER</h2>
       <h2>Report a Storm or Unusual Weather Event</h2>
       <form method="get" action="thanks.html">
@@ -67,7 +67,9 @@
 
         <fieldset>
           <legend>Storm Report</legend>
-          <label class="top">Storm Date <input type="date" name=""/></label>
+          <label class="top"
+            >Storm Date <input type="date" name="stormReport"
+          /></label>
           <label class="top" for="stormType">Storm Type </label>
           <input list="storm-type" id="stormType" name="stormType" />
 
@@ -79,6 +81,36 @@
             <option value="Tornado"> </option>
           </datalist>
 
+          <label class="top" for="rating"
+            >Storm Severity Rating: &nbsp;&nbsp;&nbsp;
+            <input
+              type="range"
+              id="rating"
+              value="5"
+              min="1"
+              max="10"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="ratingvalue">10</span>
+          </label>
+
+          <datalist id="tickmarks">
+            <option value="0"> </option>
+            <option value="1"> </option>
+            <option value="2"> </option>
+            <option value="3"> </option>
+            <option value="4"> </option>
+            <option value="5"> </option>
+            <option value="6"> </option>
+            <option value="7"> </option>
+            <option value="8"> </option>
+            <option value="9"> </option>
+            <option value="10"> </option>
+          </datalist>
+
           <label class="top"
             >Storm Region
             <select name="stormRegion">
@@ -88,10 +120,11 @@
               <option value="fishhaven">Fish Haven</option>
             </select>
           </label>
+
           <div>In Danger Level</div>
-          <label class="side"><input type="radio" name="danger">Yes</label>
-          <label class="side"><input type="radio" name="danger">Maybe</label>
-          <label class="side"><input type="radio" name="danger">No</label>
+          <label class="side"><input type="radio" name="danger" />Yes</label>
+          <label class="side"><input type="radio" name="danger" />Maybe</label>
+          <label class="side"><input type="radio" name="danger" />No</label>
         </fieldset>
 
         <fieldset>
@@ -106,9 +139,10 @@
     <footer>
       &copy; Poseidon's Predictions |
       <a href="https://www.byui.edu/online">BYUI Online Learning</a> | Lavinia
-      Marie Roe | <br />
+      Marie Roe | <a href= "#">Terms of Use</a><br />
       <span id="currentdate"></span>
     </footer>
     <script src="js/currentdate.js"></script>
+    <script src="js/formrating.js"></script>
   </body>
 </html>
