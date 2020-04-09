@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Walter+Turncoat&display=swap');
+
+body {
+  margin: 0 auto;
+  font-family: "Raleway",sans-serif;
+  line-height: 1.5;
+  background-color: white;
+}
+
+main {
+  padding: 1.5rem;
+}
+h1 {
+  font-size: 40px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Walter Turncoat", cursive;
+}
+
+header {
+  background-color:white;
+  color:#03256C;
+}
+ footer {
+  background-color: #03256C;
+  color:white;
+}
+.logoimage {
+  border-radius: 25px;
+  padding: 20px;
+}
+nav {
+margin: 0 auto;
+display: block;
+color: white;
+padding: 0.75em;
+text-align: left;
+background-color: #03256c;
+font-family: "Walter Turncoat", cursive;
+}
+.navlist {
+  list-style: none;
+  padding: 0;
+}
+.navlist li {
+  display: none;
+}
+.navlist li:first-child {
+  display: block;
+}
+.navlist a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+nav a.active {
+  color: #e8c547;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #e8c547;
+  font-weight: 700;
+}
+.responsive li {
+  display: block;
+}
+
+/*Index/homepage*/
+
+.card {
+  /* Add shadows to create the "card" effect */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.cardcontainer {
+  padding: 2px 16px;
+}
+
+/*Contact Page*/
+.container h2 {
+  text-align: center;
+}
+form fieldset {
+  margin: 1em auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 30rem;
+  justify-content: center;
+  background-color: white;
+}
+
+form legend {
+  color: white;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding: 1rem;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+form label.top input,
+form label.top select{
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: black;
+  width: 100%;
+  max-width: 20rem;
+  background-color: whitesmoke;
+}
+
+#addComments {
+  display: block;
+  font-size: 1rem;
+  padding: 0.75rem;
+  color: black;
+  width: 100%;
+  max-width: 20rem;
+  background-color: whitesmoke;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #445ba9;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}

@@ -1,0 +1,25 @@
+@media screen and (min-width: 40em) {
+  header {
+    display: flex;
+  }
+  .navlist {
+    display: flex;
+  }
+  .navlist li {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .navlist li a {
+    text-align: center;
+  }
+  .navlist li:first-child {
+    display: none;
+  }
+  nav a.active {
+    border-bottom: 3px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+  }
+  nav a:hover {
+    border-bottom: 3px solid white;
