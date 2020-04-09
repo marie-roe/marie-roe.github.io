@@ -40,10 +40,11 @@
   .riverguide section {
 
   grid-template-columns: repeat(2, 1fr);
+ 
   }
   
   .riverguide img {
-    width: 30rem;
+    width: 25rem;
     float: left;
     margin: 1rem;
     
