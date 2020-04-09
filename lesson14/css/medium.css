@@ -45,11 +45,17 @@
   
   .riverguide img {
     width: 25rem;
-    float: left;
+    float:left;
     margin: 1rem;
     
   }
   .riverguide section img { 
     grid-row: 1 / 6;
    } 
+
+
+form input.submitBtn {
+  
+  max-width: 30rem;
+}
 }
