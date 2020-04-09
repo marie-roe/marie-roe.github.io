@@ -22,6 +22,13 @@ header {
   background-color:white;
   color:#03256C;
   padding: 10px;
+
+}
+.weathersum {
+  background-color: #e8c547;
+  padding:.25em;
+  text-align: center;
+  font-weight: bold;
 }
  footer {
   background-color: #03256C;
