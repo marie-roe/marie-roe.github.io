@@ -24,6 +24,14 @@ header {
  footer {
   background-color: #03256C;
   color:white;
+  text-align: center;
+  padding:.5em;
+}
+footer a {
+  color:white;
+}
+footer a:hover {
+  color:#e8c547;
 }
 .logoimage {
   border-radius: 25px;
@@ -104,6 +112,14 @@ tr:nth-child(even) {
 }
 
 /*Contact Page (form is also for Reservation page)*/
+
+.social img {
+  width: 30px;
+  padding: 30px;
+}
+.social a:hover {
+  opacity: 0.5;
+}
 .container h2 {
   text-align: center;
 }
