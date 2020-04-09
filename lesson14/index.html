@@ -14,6 +14,7 @@
     <link href="css/small.css" rel="stylesheet" />
     <link href="css/medium.css" rel="stylesheet" />
     <link href="css/large.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -28,13 +29,27 @@
       <ul class="navlist">
         <li><a class="" href="#">Menu</a></li>
         <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="adventures.html">Adventures</a></li>
+        <!--<li><a href="adventures.html">Adventures</a></li>-->
         <li><a href="riverguides.html">River Guides</a></li>
         <li><a href="reservations.html">Reservations</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <main>
+      <div class="herocontainer">
+        <picture>
+          <source
+            srcset="images/raftingHero.jpg"
+            media="(min-width:800px)"
+          />
+          <source
+            srcset="images/raftingHero.jpg"
+            media="(min-width:300px) and (max-width:799px)"
+          />
+          <img src="images/images/raftingHero.jpg" alt="rafting" />
+        </picture>
+      
+      <h2>Your Next Adventure Starts Here!</h2>
       <div class="card">
         <img src="images/groupwhitewater.jpg" alt="whitewater group" />
         <div class="cardcontainer">
@@ -91,5 +106,6 @@
       ><br />
       <span id="currentdate"></span>
     </footer>
+    <script src="js/currentdate.js"></script>
   </body>
 </html>

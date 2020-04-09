@@ -1,0 +1,8 @@
+@media screen and (min-width: 64em) {
+
+  card {
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+  }
+}

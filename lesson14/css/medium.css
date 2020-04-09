@@ -23,3 +23,7 @@
   }
   nav a:hover {
     border-bottom: 3px solid white;
+  }
+  .card {
+    text-align: center;
+  }

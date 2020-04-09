@@ -1,0 +1,30 @@
+{
+  "name" : "Gunner",
+  “lastname”: “Smith”,
+  “photo”: "gunner.jpg",
+  “certlevel”: "awesome", 
+  “yrsExp”: 15,
+  “email”: “gunner@salmonriveradventures.com”,
+  “bio”: “Gunner"
+},
+{
+  “name": “Jack”,
+  “lastname”: “Spratt”,
+  “photo”: "jack.jpg",
+  “certlevel”:"awesome" , 
+  “yrsExp”: "10,
+  “email”: “Jack@salmonriveradventures.com”,
+  “bio”: “Gunner"
+},
+{
+  “name": “Andromeda”,
+  “lastname”: “Starr”,
+  “photo”: "andromeda.jpg",
+  “certlevel”: "nextlevel", 
+  “yrsExp”: 8,
+  “email”: “Andromeda@salmonriveradventures.com”,
+  “bio”: “Gunner"
+}
+]
+}
+

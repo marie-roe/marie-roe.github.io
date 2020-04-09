@@ -13,17 +13,25 @@
     />
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header>
+      <img
+        src="images/SalmonRiverLogo2.jpg"
+        alt="logo image"
+        class="logoimage"
+      />
       <h1>Salmon River Adventures</h1>
+
 
     </header>
     <nav>
       <ul class="navlist">
         <li><a class="" href="#">Menu</a></li>
         <li><a  href="index.html">Home</a></li>
-        <li><a href="adventures.html">Adventures</a></li>
+        <!--<li><a href="adventures.html">Adventures</a></li>-->
         <li><a href="riverguides.html">River Guides</a></li>
         <li><a class="active" href ="reservations.html">Reservations</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -31,15 +39,106 @@
 
     </nav>
     <main>
-      <div class="about">
-        <section>
-          <h3>About Us</h3>
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nemo illo eaque nam doloremque! Placeat rem, tempore repudiandae eos, pariatur, officia dolorem maxime error corrupti voluptatum ut odio nam ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequatur minus tempora hic optio, iste facilis nihil dolore quas rem sit non quo nostrum quam inventore excepturi repudiandae blanditiis nesciunt?
-          </p>
-        </section>
-      </div>
+      <h2>Adventure is Waiting
+      </h2>
+      <h3>Choose an Adventure</h3>
 
+<table>
+  <tr>
+    <th>Adventure Type</th>
+    <th>Length of Stay</th>
+    <th>Skill Level</th>
+    <th>Cost</th>
+  </tr>
+  <tr>
+    <td>Group White Water Rafting</td>
+    <td>Group White Water Rafting</td>
+    <td>Two Man Raft</td>
+    <td>Kayak</td>
+  </tr>
+  <tr>
+    <td>Three Days, Two Nights</td>
+    <td>Five Days, 4 Nights</td>
+    <td>Three Days, Two Nights</td>
+    <td>One Day</td>
+  </tr>
+  <tr>
+    <td>All Skill Levels Available</td>
+    <td>All Skill Levels Available</td>
+    <td>Advanced</td>
+    <td>All Skill Level Available</td>
+  </tr>
+  <tr>
+    <td>$800</td>
+    <td>$1200</td>
+    <td>$1500</td>
+    <td>$150-$300 (skill dependent)</td>
+  </tr>
+  
+</table>
+        
+        <h2>Reserve a Salmon River Adventure</h2>
+        <div>
+          <form method="get" action="thanks.html">
+          <fieldset>
+            <legend>Adenturer Info</legend>
+            <label class="top">
+              Full Name*
+              <input type="text" name="fname" pattern="[A-Za-z]" placeholder="first" required
+            /><br>
+          <input type="text" name="lname" pattern="[A-Za-z]"{2} placeholder="last" required></label>
+            <label class="top"
+              >Email<input
+                type="email"
+                name="email"
+                placeholder="yourname@example.com"
+            /></label>
+            <label class="top"
+              >Phone*<input
+                type="tel"
+                name="phone"
+                placeholder="0005551234"
+                required
+            /></label>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Adventure Info</legend>
+            <label class="top"
+              >Start Date: <input type="date" name="startDate"
+            /></label>
+            <label class="top">Skill Level
+            <select name="skillLevel">
+              <option value="">Select Skill Level...</option>
+              <option value="firstTime">First Time </option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+            </label>
+            
+            <label class="top"
+              >Adventure Package
+              <select name="chooseAdventure">
+                <option value="">Select Adventure...</option>
+                <option value="3dayRaft">Three Day Raft</option>
+                <option value="5dayRaft">Five Day Raft</option>
+                <option value="2manRaft">Two Man Raft</option>
+                <option value="kayak">Kayak</option>
+              </select>
+            </label>
+
+          </fieldset>
+  
+          <fieldset>
+            <legend>Special Accomodations</legend>
+            <label class="top" for="addComments">Comments</label>
+            <textarea id="addComments" rows="25" cols="150"></textarea>
+          </fieldset>
+  
+          <input type="submit" value="Reserve Now" class="submitBtn" />
+        </form>
+        </div>
     </main>
     <footer>
 
