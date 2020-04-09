@@ -1,5 +1,14 @@
 @media screen and (min-width: 64em) {
 
+  .aboutimg {
+    float:right;
+  }
+  /* Home Page */
+  .herocontainer {
+    margin: 10px auto;
+    position: relative;
+    width: 930px;
+  }
   card {
   
     display: grid;

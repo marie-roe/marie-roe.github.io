@@ -27,4 +27,28 @@
   .card {
     text-align: center;
   }
+  /*home page*/
+  .herocontainer {
+
+    margin: 10px auto;
+    position: relative;
+    width: 640px;
+    padding-bottom: 15px;
+  }
+  /*River Guides*/
+  
+  .riverguide section {
+
+  grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .riverguide img {
+    width: 30rem;
+    float: left;
+    margin: 1rem;
+    
+  }
+  .riverguide section img { 
+    grid-row: 1 / 6;
+   } 
 }

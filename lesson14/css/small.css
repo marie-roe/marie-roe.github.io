@@ -8,8 +8,9 @@ body {
 }
 
 main {
-  padding: 1.5rem;
+  padding: 2.5rem;
 }
+
 h1 {
   font-size: 40px;
 }
@@ -20,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
   background-color:white;
   color:#03256C;
+  padding: 10px;
 }
  footer {
   background-color: #03256C;
@@ -74,7 +76,11 @@ nav a:hover {
 }
 
 /*Index/homepage*/
-
+.herocontainer {
+  margin: 10px auto;
+  position: relative;
+  
+}
 .card {
   display: grid;
   grid-template-columns: repeat(auto-fill, 400px);
@@ -91,6 +97,32 @@ nav a:hover {
 .cardcontainer {
   padding: 2px 16px;
 }
+
+/* River Guides*/
+.riverguide section {
+  display:grid;
+  grid-template-columns: 1fr;
+  margin: 0.25rem auto;
+  padding: 0.7rem;
+  background-color: ;
+  color: ;
+  box-shadow: 3px 3px 5px 10px lightgray;
+  text-align: center;
+  height: auto;
+}
+.riverguide h3 {
+  font-size: 1rem;
+}
+
+.riverguide section img {
+  width: 100%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+  .riverguide h3 {
+     font-size: 1rem; 
+    }
+
 /*Reservation Page*/
 
 table {

@@ -19,15 +19,19 @@ fetch(requestURL)
 
      
       h2.textContent = riverguides[i].name + ' ' + riverguides[i].lastname;
-    
+      bio.textContent = "Bio: " + riverguides[i].bio;
       image.setAttribute("src", "images/" + riverguides[i].photo);
       image.setAttribute("alt", riverguides[i].name);
-      certlevel.textContent = riverguides[i].certlevel;
-      exp.textContent = riverguides[i].yrsExp;
-  
+      certlevel.textContent = "Certification Level: " + riverguides[i].certlevel;
+      exp.textContent = "Experience: " + riverguides[i].yrsExp + " years";
+      email.textContent = "Email: " + riverguides[i].email;
+
+      
       card.appendChild(h2);
-      card.appendChild(certleevel);
+      card.appendChild(certlevel);
       card.appendChild(exp);
+      card.appendChild(email);
+      card.appendChild(bio);
       card.appendChild(image);
       
 
