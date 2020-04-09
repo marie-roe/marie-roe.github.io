@@ -7,9 +7,9 @@ fetch(currentWeather)
     document.getElementById("sky").textContent =
       jsObject.weather[0].description;
 
-    document.getElementById("temperature").textContent = jsObject.main.temp;
+    document.getElementById("temperature").textContent = " " + jsObject.main.temp + "F  ";
 
-    document.getElementById("humidity").textContent = jsObject.main.humidity;
+    document.getElementById("humidity").textContent = jsObject.main.humidity + " % ";
 
-    document.getElementById("windspeed").textContent = jsObject.wind.speed;
+    document.getElementById("windspeed").textContent = jsObject.wind.speed + "mph";
   });

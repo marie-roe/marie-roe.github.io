@@ -92,6 +92,25 @@ nav a:hover {
   margin: 10px auto;
   width: 100%;
 }
+.herocontainer .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.herocontainer .btn:hover {
+  background-color: black;
+}
 .card {
   display: grid;
   grid-template-columns: repeat(auto-fill, 400px);
