@@ -84,14 +84,23 @@ nav a:hover {
   padding: 2px 16px;
 }
 /*Reservation Page*/
+
+table {
+  border-collapse: collapse;
+  margin:0 auto;
+  
+}
+thead {
+  font-weight: bold;
+}
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid black;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color:#dddddd ;
 }
 
 /*Contact Page*/
@@ -100,7 +109,7 @@ tr:nth-child(even) {
 }
 form fieldset {
   margin: 1em auto;
-  border: 2px solid black;
+  border: 2px solid #4357AD;
   border-radius: 10px;
   padding: 2rem;
   max-width: 30rem;
@@ -109,7 +118,7 @@ form fieldset {
 }
 
 form legend {
-  color: white;
+  color: #4357AD;
   margin: 0 1rem;
   padding: 0 0.5rem;
 }
@@ -155,7 +164,7 @@ form label.top input:required:valid {
 
 form input.submitBtn {
   border: none;
-  background-color: #445ba9;
+  background-color: #4357ad;
   color: white;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
