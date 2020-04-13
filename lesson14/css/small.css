@@ -96,8 +96,6 @@ nav a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   background-color: #555;
   color: white;
   font-size: 16px;
@@ -107,10 +105,15 @@ nav a:hover {
   border-radius: 5px;
   text-align: center;
 }
-
+  
 .herocontainer .btn:hover {
   background-color: black;
 }
+
+.imgText {
+  float: center
+}
+
 .card {
   display: grid;
   grid-template-columns: repeat(auto-fill, 400px);
@@ -247,4 +250,5 @@ form input.submitBtn {
   margin: 0 0 2rem 2%;
   width: 96%;
   max-width: 20rem;
+
 }

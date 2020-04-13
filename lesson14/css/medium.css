@@ -57,5 +57,6 @@
 form input.submitBtn {
   
   max-width: 30rem;
+  margin-left: 15em;
 }
 }
