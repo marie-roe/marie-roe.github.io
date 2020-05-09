@@ -1,0 +1,29 @@
+@media only screen and (min-width: 700px) {
+
+header {
+  top: 0;
+}
+header, nav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+}
+main {
+  margin-left: 150px;
+}
+
+article img {
+  width: 300px;
+  margin: auto;
+}
+
+}
